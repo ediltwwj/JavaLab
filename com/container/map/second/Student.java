@@ -4,6 +4,11 @@ public class Student {
     private String name;  // 姓名
     private int age;  // 年龄
 
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
