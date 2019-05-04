@@ -37,10 +37,20 @@ public class Student {
 
         Student s = (Student) o;
 
-        if (this.name.equals(s.name) && this.age == s.age)
+        if ((this.name.equals(s.name)) && (this.age == s.age))
             return true;
         else
             return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+
+        result = (this.name == null ? 0 : this.name.hashCode());
+        result += this.age;
+
+        return result;
     }
 }
 
