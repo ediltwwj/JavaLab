@@ -32,6 +32,8 @@ public class Student {
 
     @Override
     public boolean equals(Object o) {
+        System.out.println(this.name + "调用equals()");
+
         if (!(o instanceof com.container.map.second.Student))
             return false;
 
@@ -45,6 +47,8 @@ public class Student {
 
     @Override
     public int hashCode() {
+        System.out.println(this.name + "调用HashCode()");
+
         int result;
 
         result = (this.name == null ? 0 : this.name.hashCode());
