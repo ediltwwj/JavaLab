@@ -68,12 +68,9 @@ public class Student implements Comparable {
     @Override
     public int compareTo(Object o) {
         Student s = (Student) o;
+        int result = 0;
 
-        int result = this.totalScore > s.totalScore ? 1 : (this.totalScore == s.totalScore ? 0 : -1);
-        result = -result;  // 因为是降序
-
-        if (0 == result)
-            result = this.stuName.compareTo(s.stuName); // compareTo比较对象
+        result = this.totalScore > s.totalScore ? 1 : (this.totalScore == s.totalScore ? 0 : -1);
 
         return result;
     }
