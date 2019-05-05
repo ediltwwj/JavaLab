@@ -3,31 +3,31 @@ package com.container.linkedlist;
 import java.util.LinkedList;
 
 public class MyQueue<T> {
-    private LinkedList<T> linkedlist = new LinkedList<T>();
+    private LinkedList<T> linkedList = new LinkedList<T>();
 
     // 入队
     public void offer(T e) {
-        linkedlist.addLast(e);
+        linkedList.addLast(e);
     }
 
     // 出队
     public T poll() {
-        return linkedlist.removeFirst();
+        return linkedList.removeFirst();
     }
 
     // 大小
     public int size() {
-        return linkedlist.size();
+        return linkedList.size();
     }
 
     // 判空
     public boolean isEmpty() {
-        return linkedlist.isEmpty();
+        return linkedList.isEmpty();
     }
 
     // 清空
     public void clear() {
-        linkedlist.clear();
+        linkedList.clear();
     }
 
     // 单向队列，其余队列方法类似
