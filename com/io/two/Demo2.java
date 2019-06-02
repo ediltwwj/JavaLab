@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Demo2 {
     public static void main(String[] args) throws Exception {
-        String fileName = "D:\\编程\\JavaLab\\com\\io\\demo2.txt";
+        String fileName = "D:\\编程\\JavaLab\\com\\io\\two\\demo2.txt";
         // 从键盘写入文件
         FileOutputStream fos = new FileOutputStream(fileName);
         String str = new Scanner(System.in).nextLine();
